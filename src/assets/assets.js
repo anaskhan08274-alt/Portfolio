@@ -1,4 +1,5 @@
 import { FaLightbulb, FaPaintBrush, FaCode, FaReact, FaServer, FaPython, FaFire, FaLaptopCode, FaNodeJs, FaStripe,  FaDatabase, FaVuejs, FaCloud, FaRobot } from 'react-icons/fa';
+import { SiVercel } from "react-icons/si"; 
 
 import profileImg from './Profile.avif';
 import projectImg1 from './project1.avif';
@@ -64,7 +65,7 @@ export const skills = [
   },
   {
     title: 'Vercel',
-    icon: FaCloud,
+    icon: SiVercel,
     description: 'Deploying and managing applications in cloud environments.',
     tags: ['Meta', 'Environment', 'Git']
   },
