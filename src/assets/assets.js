@@ -105,7 +105,7 @@ export const projects = [
     image: projectImg3,
     tech: ["Bootstrap", "AOS", "Google Fonts"],
     icons: [FaReact, FaDatabase],
-    demo: "https://vercel.com/anas-projects-8cb9ba05/bootresponse",
+    demo: "https://bootresponse.vercel.app/",
     code: "https://github.com/anaskhan08274-alt/response",
   },
   {
@@ -125,7 +125,7 @@ export const projects = [
     image: projectImg5,
     tech: ["HTML", "CSS", "JavaScript"],
     icons: [FaReact, FaNodeJs, FaDatabase],
-    demo: "https://vercel.com/anas-projects-8cb9ba05/adding-machine",
+    demo: "https://adding-machine.vercel.app/",
     code: "https://github.com/anaskhan08274-alt/Adding-machine",
   },
   {
@@ -135,7 +135,7 @@ export const projects = [
     image: projectImg6,
     tech: ["HTML", "CSS", "JavaScript"],
     icons: [FaRobot, FaReact, FaCloud],
-    demo: "https://vercel.com/anas-projects-8cb9ba05/random-img-genrate",
+    demo: "https://random-img-genrate-krliqd689-anas-projects-8cb9ba05.vercel.app/",
     code: "https://github.com/anaskhan08274-alt/Random-img-genrate",
   },
 ];
