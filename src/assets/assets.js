@@ -66,7 +66,7 @@ export const skills = [
     title: 'Vercel',
     icon: FaCloud,
     description: 'Deploying and managing applications in cloud environments.',
-    tags: ['CDN', 'Netlify Function', 'OG']
+    tags: ['Meta', 'Environment', 'Git']
   },
   {
     title: 'ADCA & CCC',
@@ -114,8 +114,8 @@ export const projects = [
     image: projectImg4,
     tech: ["Next.js", "Tailwind CSS", "Framer Motion", "Markdown"],
     icons: [FaReact, FaCloud],
-    demo: "#",
-    code: "#",
+    demo: "https://portfolio-six-kohl-1oh1tbusum.vercel.app/",
+    code: "https://github.com/anaskhan08274-alt/Portfolio",
   },
   {
     id: 5,
