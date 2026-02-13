@@ -32,7 +32,7 @@ const Hero =() => {
 
             <div className="md:w-1/2 flex justify-center">
                 <div className="relative w-64 h-64 md:w-80 md:h-80">
-                    <div className="basolute inset-0 rounded-full bg-gradient-to-r from-purple to-pink  opacity-70">
+                    <div className="absolute inset-0 rounded-full bg-gradient-to-r from-purple to-pink  opacity-70">
                         <motion.img
                         animate={{y:[0, -20, 0]}}
                         transition={{
