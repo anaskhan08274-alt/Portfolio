@@ -1,4 +1,4 @@
-import { FaLightbulb, FaPaintBrush, FaCode, FaReact, FaServer, FaPython, FaLaptopCode, FaNodeJs, FaStripe, FaVuejs, FaFire, FaDatabase, FaCloud, FaRobot } from 'react-icons/fa';
+import { FaLightbulb, FaPaintBrush, FaCode, FaReact, FaServer, FaPython, FaFire, FaLaptopCode, FaNodeJs, FaStripe,  FaDatabase, FaVuejs, FaCloud, FaRobot } from 'react-icons/fa';
 
 import profileImg from './profile.avif';
 import projectImg1 from './project1.avif';
@@ -42,7 +42,7 @@ export const skills = [
     title: 'Frontend Development',
     icon: FaReact,
     description: 'Building responsive and interactive user interfaces with modern frameworks.',
-    tags: ['HTML', 'CSS', 'Bootstrap', 'Tailwind', 'Javascript', 'React.js']
+    tags: ['HTML', 'CSS', 'Bootstrap', 'Tailwind', 'JavaScript', 'React.js']
   },
   {
     title: 'Backend Development',
@@ -60,53 +60,55 @@ export const skills = [
     title: 'Python Development',
     icon: FaPython,
     description: 'Python development is used to build software, websites, and automation tools easily and efficiently.',
-    tags: ['Python', 'Num py', 'library', 'Fuction']
+    tags: ['Python', 'NumPy', 'library', 'Fuction']
   },
   {
-    title: 'Netlify',
+    title: 'Vercel',
     icon: FaCloud,
     description: 'Deploying and managing applications in cloud environments.',
-    tags: [' CDN',' Netlify Functions', 'OG']
+    tags: ['CDN', 'Netlify Function', 'OG']
   },
   {
     title: 'ADCA & CCC',
     icon: FaLaptopCode,
     description: 'ADCA & CCC are computer courses that provide basic to advanced computer knowledge, including MS Office, internet, databases, and essential skills required for office, government, and IT-related jobs.',
-    tags: ['MS.Office', 'Libare Office', 'MSDOS', 'Wordpad']
+    tags: ['MS.Office', 'LibreOffice', 'MS-DOS', 'Wordpad']
   }
 ];
 
-
-
 export const projects = [
   {
+    id: 1,
     title: "Pokemon Card",
-    description: "A complete Pokémon card hub for collectors, players, and fans",
+    description: "A complete Pokémon card hub for collectors, players, and fans.",
     image: projectImg1,
-    tech: ["HTML", "CSS", "Javascript", "React.js"],
-    icons: [FaReact, FaNodeJs, FaDatabase , FaStripe],
+    tech: ["HTML", "CSS", "JavaScript", "React.js"],
+    icons: [FaReact, FaNodeJs, FaDatabase, FaStripe],
     demo: "https://pokemon-card-app-alpha.vercel.app/",
     code: "https://github.com/anaskhan08274-alt/pokemonCardApp",
   },
   {
+    id: 2,
     title: "E-Commerce Platform",
     description: "A full-featured online store with shopping cart, user authentication, and payment processing.",
     image: projectImg2,
-    tech: ["React.js", "Fack API", "Tailwind CSS"],
-    icons: [FaVuejs, FaFire, FaCloud , FaDatabase],
+    tech: ["React.js", "Fake API", "Tailwind CSS"],
+    icons: [FaVuejs, FaFire, FaCloud, FaDatabase],
     demo: "https://e-commerce-frontend-1q7359rqv-anas-projects-8cb9ba05.vercel.app",
     code: "https://github.com/anaskhan08274-alt/E-Commerce-Frontend",
   },
   {
+    id: 3,
     title: "Bootstrap Website",
-    description: "This is a simple & resposive bootstrap website.",
+    description: "A simple and responsive Bootstrap website.",
     image: projectImg3,
-    tech: ["Bootstrap", "AOS", "Google font"],
+    tech: ["Bootstrap", "AOS", "Google Fonts"],
     icons: [FaReact, FaDatabase],
     demo: "https://vercel.com/anas-projects-8cb9ba05/bootresponse",
     code: "https://github.com/anaskhan08274-alt/response",
   },
   {
+    id: 4,
     title: "Portfolio Website",
     description: "A personal portfolio to showcase projects, skills, and blogs with dark/light mode support.",
     image: projectImg4,
@@ -116,25 +118,26 @@ export const projects = [
     code: "#",
   },
   {
+    id: 5,
     title: "Calculator",
-    description: "Perform quick and accurate calculations with this JavaScript calculator..",
+    description: "Perform quick and accurate calculations with this JavaScript calculator.",
     image: projectImg5,
-    tech: ["HTML", "CSS", "Javascript"],
-    icons: [FaReact, FaNodeJs, FaDatabase ],
+    tech: ["HTML", "CSS", "JavaScript"],
+    icons: [FaReact, FaNodeJs, FaDatabase],
     demo: "https://vercel.com/anas-projects-8cb9ba05/adding-machine",
     code: "https://github.com/anaskhan08274-alt/Adding-machine",
   },
   {
+    id: 6,
     title: "Random Image Generator",
-    description: "Generate images using HTML, CSS & dynamic Javascript logics.",
+    description: "Generate images using HTML, CSS and dynamic JavaScript logic.",
     image: projectImg6,
-    tech: ["HTML", "CSS", "Javascript"  ],
+    tech: ["HTML", "CSS", "JavaScript"],
     icons: [FaRobot, FaReact, FaCloud],
     demo: "https://vercel.com/anas-projects-8cb9ba05/random-img-genrate",
     code: "https://github.com/anaskhan08274-alt/Random-img-genrate",
-  }
+  },
 ];
-
 
 export const workData = [
   {
