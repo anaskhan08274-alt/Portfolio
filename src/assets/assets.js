@@ -86,7 +86,7 @@ export const projects = [
     tech: ["HTML", "CSS", "JavaScript", "React.js"],
     icons: [FaReact, FaNodeJs, FaDatabase, FaStripe],
     demo: "https://pokemon-card-app-alpha.vercel.app/",
-    code: "https://github.com/anaskhan08274-alt/pokemonCardApp",
+    code: "https://pokemon-card-app-alpha.vercel.app/",
   },
   {
     id: 2,
