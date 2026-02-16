@@ -33,7 +33,7 @@ const Contact = () => {
     setLoading(true);
 
     try {
-      const res = await fetch("https://portfolio-backend-mhpnhy84c-anas-projects-8cb9ba05.vercel.app/", {
+      const res = await fetch("/api/send-email", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
