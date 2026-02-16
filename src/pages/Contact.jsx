@@ -19,7 +19,9 @@ const Contact = () => {
 
   const [loading, setLoading] = useState(false);
 
-  // input change handler
+  const BACKEND_URL = "https://portfolio-backend-five-ivory.vercel.app/"; 
+  // 👆 yaha apna real backend URL daalna
+
   const handleChange = (e) => {
     setFormData({
       ...formData,
@@ -27,15 +29,12 @@ const Contact = () => {
     });
   };
 
-  // form submit handler
   const handleSubmit = async (e) => {
     e.preventDefault();
     setLoading(true);
 
     try {
-
-
-      const res = await fetch("/api/send-email", {
+      const res = await fetch(`${BACKEND_URL}/send-email`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -44,12 +43,17 @@ const Contact = () => {
       });
 
       const data = await res.json();
-      alert(data.message);
 
-      // form reset
-      setFormData({ name: "", email: "", message: "" });
+      if (data.success) {
+        alert("✅ Email sent successfully!");
+        setFormData({ name: "", email: "", message: "" });
+      } else {
+        alert(data.error || "❌ Failed to send email");
+      }
+
     } catch (error) {
-      alert("Something went wrong");
+      console.error(error);
+      alert("⚠ Something went wrong");
     } finally {
       setLoading(false);
     }
@@ -121,12 +125,12 @@ const Contact = () => {
                 disabled={loading}
                 className="w-full px-6 py-3 bg-purple rounded-lg font-medium hover:bg-purple-700 transition duration-300 cursor-pointer"
               >
-                {loading ? "Sending..." : "Send"}
+                {loading ? "Sending..." : "Send Message"}
               </button>
             </form>
           </div>
 
-          {/* Contact Info (same as yours, untouched) */}
+          {/* Contact Info */}
           <div className="space-y-8">
             <div className="flex items-start">
               <FaMapMarkerAlt className="text-purple text-2xl mr-4" />
