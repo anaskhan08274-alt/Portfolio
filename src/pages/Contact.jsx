@@ -33,6 +33,8 @@ const Contact = () => {
     setLoading(true);
 
     try {
+
+
       const res = await fetch("/api/send-email", {
         method: "POST",
         headers: {
