@@ -34,7 +34,7 @@ const Contact = () => {
 
     try {
       const res = await fetch(`${process.env.REACT_APP_API_URL}/api/send-email`, {
-        method: "POST",
+        method: "GET",
         headers: {
           "Content-Type": "application/json",
         },
