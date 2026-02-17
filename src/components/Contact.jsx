@@ -19,7 +19,7 @@ const Contact = () => {
 
   const [loading, setLoading] = useState(false);
 
-  // input change handler
+  // Input change handler
   const handleChange = (e) => {
     setFormData({
       ...formData,
@@ -27,26 +27,26 @@ const Contact = () => {
     });
   };
 
-  // form submit handler
+  // Form submit handler
   const handleSubmit = async (e) => {
     e.preventDefault();
     setLoading(true);
 
     try {
-      const res = await fetch(`${process.env.REACT_APP_API_URL}/api/send-email`, {
+      // Replace this URL with your backend deployed URL
+      const res = await fetch("https://portfolio-backend-uujp.vercel.app/api/send-email", {
         method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
+        headers: { "Content-Type": "application/json" },
         body: JSON.stringify(formData),
       });
 
       const data = await res.json();
       alert(data.message);
 
-      // form reset
+      // Reset form
       setFormData({ name: "", email: "", message: "" });
     } catch (error) {
+      console.error(error);
       alert("Something went wrong");
     } finally {
       setLoading(false);
@@ -88,9 +88,7 @@ const Contact = () => {
               </div>
 
               <div>
-                <label className="block text-gray-300 mb-2">
-                  Email Address
-                </label>
+                <label className="block text-gray-300 mb-2">Email Address</label>
                 <input
                   type="email"
                   name="email"
@@ -102,9 +100,7 @@ const Contact = () => {
               </div>
 
               <div>
-                <label className="block text-gray-300 mb-2">
-                  Your Message
-                </label>
+                <label className="block text-gray-300 mb-2">Your Message</label>
                 <textarea
                   name="message"
                   value={formData.message}
@@ -124,15 +120,13 @@ const Contact = () => {
             </form>
           </div>
 
-          {/* Contact Info (same as yours, untouched) */}
+          {/* Contact Info */}
           <div className="space-y-8">
             <div className="flex items-start">
               <FaMapMarkerAlt className="text-purple text-2xl mr-4" />
               <div>
                 <h3 className="text-lg font-semibold">Location</h3>
-                <p className="text-gray-400">
-                  Lucknow, Begariya Dubagga
-                </p>
+                <p className="text-gray-400">Lucknow, Begariya Dubagga</p>
               </div>
             </div>
 
@@ -140,9 +134,7 @@ const Contact = () => {
               <FaEnvelope className="text-purple text-2xl mr-4" />
               <div>
                 <h3 className="text-lg font-semibold">Email</h3>
-                <p className="text-gray-400">
-                  anaskhan08274@gmail.com
-                </p>
+                <p className="text-gray-400">anaskhan08274@gmail.com</p>
               </div>
             </div>
 
@@ -157,18 +149,10 @@ const Contact = () => {
             <div>
               <h3 className="font-semibold">Follow Me</h3>
               <div className="flex space-x-4 mt-4">
-                <a href="#" className="icon-btn">
-                  <FaGithub />
-                </a>
-                <a href="#" className="icon-btn text-blue">
-                  <FaLinkedin />
-                </a>
-                <a href="#" className="icon-btn text-blue-400">
-                  <FaTwitter />
-                </a>
-                <a href="#" className="icon-btn text-pink">
-                  <FaInstagram />
-                </a>
+                <a href="#" className="icon-btn"><FaGithub /></a>
+                <a href="#" className="icon-btn text-blue"><FaLinkedin /></a>
+                <a href="#" className="icon-btn text-blue-400"><FaTwitter /></a>
+                <a href="#" className="icon-btn text-pink"><FaInstagram /></a>
               </div>
             </div>
           </div>
