@@ -34,7 +34,7 @@ const Contact = () => {
 
     try {
       // Replace this URL with your backend deployed URL
-      const res = await fetch("https://portfolio-backend-uujp.vercel.app/api/send-email", {
+      const res = await fetch("https://portfolio-backend-five-ivory.vercel.app/api/send-email", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(formData),
